@@ -1,7 +1,12 @@
 '''
 Aum Sri Sai Ram
-
+Implementation of Darshan Gera, Vikas G N, and Balasubramanian S. Handling Ambigu-ous Annotations for Facial Expression Recognition in the Wild. 
+In Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP’21), December 19–22, 2021, Jodhpur, India.
+https://doi.org/10.1145/3490035.3490289
+Authors: Darshan Gera, Vikas G N and Dr. S. Balasubramanian, SSSIHL
+Date: 10-10-2021
 Email: darshangera@sssihl.edu.in
+
 '''
 
 # -*- coding:utf-8 -*-
