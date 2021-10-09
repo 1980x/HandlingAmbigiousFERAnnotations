@@ -1,0 +1,182 @@
+
+		Aum Sri Sai Ram
+
+	FER with noisy annotations
+
+
+
+Noise level: ../data/SFEW/sfew_train.txt
+
+ 
+
+Namespace(T1=0.7, T2=0.3, adjust_lr=1, alpha=0.5, batch_size=128, beta=0.65, co_lambda=0.1, co_lambda_max=0.9, dataset='sfew', drop_rate=0, epoch_decay_start=80, eps=0.65, forget_rate=None, gpu=0, lr=0.01, margin=0.4, model_type='res', n_epoch=20, noise_file='../data/SFEW/sfew_train.txt', noise_rate=0.4, noise_type='symmetric', normalized=0, num_classes=7, num_iter_per_epoch=400, num_models=2, num_workers=4, pretrained='pretrained/res18_naive.pth_MSceleb.tar', print_freq=30, raf_path='../data/SFEW/', relabel_epochs=40, result_dir='results', resume='checkpoints/epoch_31_noise_rafdb_train_label.txt_acc_88.78.pth', save_model='False', save_result='True', seed=1, warmup_epochs=3)
+
+ Train set size: 891
+
+ Validation set size: 431
+building model...
+module.feature.weight
+module.feature.bias
+module.fc.weight
+module.fc.bias
+Model loaded from Msceleb pretrained
+module.feature.weight
+module.feature.bias
+module.fc.weight
+module.fc.bias
+Model loaded from Msceleb pretrained
+
+ Initial learning rate is:
+0.001
+0.01
+Loaded params num: 122
+Total params num: 122
+Model loaded from  checkpoints/epoch_31_noise_rafdb_train_label.txt_acc_88.78.pth
+Training ...
+
+ thredhold_clean  0.46984119908491445
+
+ Warm up stage using supervision loss based on clean samples
+
+ Epoch and relabelled  0 0
+Evaluating ...
+Epoch [1/20] Test Accuracy on the 431 test images: Accuracy 50.1160
+Training ...
+
+ thredhold_clean  0.5040174107970948
+
+ Warm up stage using supervision loss based on clean samples
+
+ Epoch and relabelled  1 0
+Evaluating ...
+Epoch [2/20] Test Accuracy on the 431 test images: Accuracy 55.4524
+Training ...
+
+ thredhold_clean  0.5385145503665669
+
+ Warm up stage using supervision loss based on clean samples
+
+ Epoch and relabelled  2 0
+Evaluating ...
+Epoch [3/20] Test Accuracy on the 431 test images: Accuracy 54.9884
+Training ...
+
+ thredhold_clean  0.5730688545105687
+
+ Robust learning stage using consistency loss and supervision loss with psudeo labeling
+
+ Epoch and relabelled  3 0
+Evaluating ...
+Epoch [4/20] Test Accuracy on the 431 test images: Accuracy 50.8121
+Training ...
+
+ thredhold_clean  0.6073983807766837
+
+ Epoch and relabelled  4 0
+Evaluating ...
+Epoch [5/20] Test Accuracy on the 431 test images: Accuracy 51.5081
+Training ...
+
+ thredhold_clean  0.6412064971280882
+
+ Epoch and relabelled  5 0
+Evaluating ...
+Epoch [6/20] Test Accuracy on the 431 test images: Accuracy 52.6682
+Training ...
+
+ thredhold_clean  0.6741858902442757
+
+ Epoch and relabelled  6 0
+Evaluating ...
+Epoch [7/20] Test Accuracy on the 431 test images: Accuracy 53.3643
+Training ...
+
+ thredhold_clean  0.7060230246245205
+
+ Epoch and relabelled  7 0
+Evaluating ...
+Epoch [8/20] Test Accuracy on the 431 test images: Accuracy 52.4362
+Training ...
+
+ thredhold_clean  0.736402967708857
+
+ Epoch and relabelled  8 0
+Evaluating ...
+Epoch [9/20] Test Accuracy on the 431 test images: Accuracy 52.6682
+Training ...
+
+ thredhold_clean  0.7650144812028583
+
+ Epoch and relabelled  9 0
+Evaluating ...
+Epoch [10/20] Test Accuracy on the 431 test images: Accuracy 54.5244
+Training ...
+
+ thredhold_clean  0.7915552662599284
+
+ Epoch and relabelled  10 0
+Evaluating ...
+Epoch [11/20] Test Accuracy on the 431 test images: Accuracy 54.0603
+Training ...
+
+ thredhold_clean  0.8157372407216112
+
+ Epoch and relabelled  11 0
+Evaluating ...
+Epoch [12/20] Test Accuracy on the 431 test images: Accuracy 53.5963
+Training ...
+
+ thredhold_clean  0.8372917207278555
+
+ Epoch and relabelled  12 0
+Evaluating ...
+Epoch [13/20] Test Accuracy on the 431 test images: Accuracy 53.1323
+Training ...
+
+ thredhold_clean  0.8559743770463448
+
+ Epoch and relabelled  13 0
+Evaluating ...
+Epoch [14/20] Test Accuracy on the 431 test images: Accuracy 52.2042
+Training ...
+
+ thredhold_clean  0.8715698386485073
+
+ Epoch and relabelled  14 0
+Evaluating ...
+Epoch [15/20] Test Accuracy on the 431 test images: Accuracy 51.5081
+Training ...
+
+ thredhold_clean  0.88389582243494
+
+ Epoch and relabelled  15 0
+Evaluating ...
+Epoch [16/20] Test Accuracy on the 431 test images: Accuracy 50.8121
+Training ...
+
+ thredhold_clean  0.8928066784718517
+
+ Epoch and relabelled  16 0
+Evaluating ...
+Epoch [17/20] Test Accuracy on the 431 test images: Accuracy 50.3480
+Training ...
+
+ thredhold_clean  0.8981962543621641
+
+ Epoch and relabelled  17 0
+Evaluating ...
+Epoch [18/20] Test Accuracy on the 431 test images: Accuracy 51.0441
+Training ...
+
+ thredhold_clean  0.9
+
+ Epoch and relabelled  18 0
+Evaluating ...
+Epoch [19/20] Test Accuracy on the 431 test images: Accuracy 52.2042
+Training ...
+
+ thredhold_clean  0.8981962543621641
+
+ Epoch and relabelled  19 0
+Evaluating ...
+Epoch [20/20] Test Accuracy on the 431 test images: Accuracy 51.9722

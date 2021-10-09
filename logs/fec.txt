@@ -1,0 +1,199 @@
+
+			Aum Sri Sai Ram
+
+FER with noisy annotations on FEC annotated 
+
+Namespace(adjust_lr=1, alpha=0.5, batch_size=128, beta=0.65, co_lambda=0.1, co_lambda_max=0.9, dataset='fec', drop_rate=0, epoch_decay_start=80, eps=0.65, evaluate=1, exponent=1, fec_path='../data/FEC/', forget_rate=None, gpu=0, lr=0.001, margin=0.4, model_dir='checkpoints', model_type='res', n_epoch=20, noise_file='fec_train_expression_by_SCN.txt', noise_rate=0.1, noise_type='pairflip', num_classes=7, num_gradual=10, num_iter_per_epoch=400, num_models=3, num_workers=4, pretrained='pretrained/res18_naive.pth_MSceleb.tar', print_freq=100, relabel_epochs=40, result_dir='results', resume='', save_model='False', save_result='True', seed=1, test_file='fec_result_file_PMCRH_16.csv', warmup_epochs=5)
+
+
+Noise level: fec_train_expression_by_SCN.txt
+Train set size: 81814
+Validation set size: 4711
+building model...
+module.feature.weight
+module.feature.bias
+module.fc.weight
+module.fc.bias
+Model loaded from Msceleb pretrained
+module.feature.weight
+module.feature.bias
+module.fc.weight
+module.fc.bias
+Model loaded from Msceleb pretrained
+
+ Initial learning rate is:
+0.001
+0.001
+
+ No checkpoint found.
+
+Training ...
+
+ thredhold_clean  0.46984119908491445
+
+ Warm up stage using supervision loss based on clean samples
+Epoch [1/20], Iter [100/639] Training Accuracy1: 56.2500, Loss1: 3.7964
+Epoch [1/20], Iter [200/639] Training Accuracy1: 64.8438, Loss1: 3.7735
+Epoch [1/20], Iter [300/639] Training Accuracy1: 61.7188, Loss1: 3.7686
+Epoch [1/20], Iter [400/639] Training Accuracy1: 64.0625, Loss1: 3.7600
+
+ Epoch and relabelled  0 0
+Evaluating ...
+Epoch [1/20] Test Accuracy on the 4711 test images: Accuracy 54.7654
+Training ...
+
+ thredhold_clean  0.5040174107970948
+
+ Warm up stage using supervision loss based on clean samples
+Epoch [2/20], Iter [100/639] Training Accuracy1: 66.4062, Loss1: 3.7649
+Epoch [2/20], Iter [200/639] Training Accuracy1: 71.8750, Loss1: 3.7512
+Epoch [2/20], Iter [300/639] Training Accuracy1: 66.4062, Loss1: 3.7738
+Epoch [2/20], Iter [400/639] Training Accuracy1: 74.2188, Loss1: 3.7406
+
+ Epoch and relabelled  1 0
+Evaluating ...
+Epoch [2/20] Test Accuracy on the 4711 test images: Accuracy 53.8951
+Training ...
+
+ thredhold_clean  0.5385145503665669
+
+ Warm up stage using supervision loss based on clean samples
+Epoch [3/20], Iter [100/639] Training Accuracy1: 69.5312, Loss1: 3.7520
+Epoch [3/20], Iter [200/639] Training Accuracy1: 71.0938, Loss1: 3.7540
+Epoch [3/20], Iter [300/639] Training Accuracy1: 67.9688, Loss1: 3.7539
+Epoch [3/20], Iter [400/639] Training Accuracy1: 77.3438, Loss1: 3.7336
+
+ Epoch and relabelled  2 0
+Evaluating ...
+Epoch [3/20] Test Accuracy on the 4711 test images: Accuracy 51.3904
+Training ...
+
+ thredhold_clean  0.5730688545105687
+
+ Warm up stage using supervision loss based on clean samples
+Epoch [4/20], Iter [100/639] Training Accuracy1: 73.4375, Loss1: 3.7416
+Epoch [4/20], Iter [200/639] Training Accuracy1: 75.0000, Loss1: 3.7446
+Epoch [4/20], Iter [300/639] Training Accuracy1: 78.1250, Loss1: 3.7349
+Epoch [4/20], Iter [400/639] Training Accuracy1: 69.5312, Loss1: 3.7539
+
+ Epoch and relabelled  3 0
+Evaluating ...
+Epoch [4/20] Test Accuracy on the 4711 test images: Accuracy 52.3880
+Training ...
+
+ thredhold_clean  0.6073983807766837
+
+ Warm up stage using supervision loss based on clean samples
+Epoch [5/20], Iter [100/639] Training Accuracy1: 78.1250, Loss1: 3.7222
+Epoch [5/20], Iter [200/639] Training Accuracy1: 75.0000, Loss1: 3.7441
+Epoch [5/20], Iter [300/639] Training Accuracy1: 75.0000, Loss1: 3.7314
+Epoch [5/20], Iter [400/639] Training Accuracy1: 75.7812, Loss1: 3.7369
+
+ Epoch and relabelled  4 0
+Evaluating ...
+Epoch [5/20] Test Accuracy on the 4711 test images: Accuracy 53.8739
+Training ...
+
+ thredhold_clean  0.6412064971280882
+
+ Robust learning stage using consistency loss and supervision loss with psudeo labeling
+Epoch [6/20], Iter [100/639] Training Accuracy1: 77.3438, Loss1: 1.8716
+Epoch [6/20], Iter [200/639] Training Accuracy1: 77.3438, Loss1: 1.8754
+Epoch [6/20], Iter [300/639] Training Accuracy1: 82.8125, Loss1: 1.8685
+Epoch [6/20], Iter [400/639] Training Accuracy1: 83.5938, Loss1: 1.8660
+
+ Epoch and relabelled  5 0
+Evaluating ...
+Epoch [6/20] Test Accuracy on the 4711 test images: Accuracy 55.5508
+Training ...
+
+ thredhold_clean  0.6741858902442757
+Epoch [7/20], Iter [100/639] Training Accuracy1: 78.9062, Loss1: 1.8720
+Epoch [7/20], Iter [200/639] Training Accuracy1: 75.7812, Loss1: 1.8772
+Epoch [7/20], Iter [300/639] Training Accuracy1: 83.5938, Loss1: 1.8650
+Epoch [7/20], Iter [400/639] Training Accuracy1: 77.3438, Loss1: 1.8670
+
+ Epoch and relabelled  6 0
+Evaluating ...
+Epoch [7/20] Test Accuracy on the 4711 test images: Accuracy 56.2938
+Models saved checkpoints/epoch_6_noise_fec_fec_train_expression_by_SCN.txt_acc_56.29.pth
+Training ...
+
+ thredhold_clean  0.7060230246245205
+Epoch [8/20], Iter [100/639] Training Accuracy1: 82.8125, Loss1: 1.8619
+Epoch [8/20], Iter [200/639] Training Accuracy1: 83.5938, Loss1: 1.8644
+Epoch [8/20], Iter [300/639] Training Accuracy1: 75.7812, Loss1: 1.8704
+Epoch [8/20], Iter [400/639] Training Accuracy1: 81.2500, Loss1: 1.8655
+
+ Epoch and relabelled  7 0
+Evaluating ...
+Epoch [8/20] Test Accuracy on the 4711 test images: Accuracy 54.7442
+Training ...
+
+ thredhold_clean  0.736402967708857
+Epoch [9/20], Iter [100/639] Training Accuracy1: 81.2500, Loss1: 1.8625
+Epoch [9/20], Iter [200/639] Training Accuracy1: 83.5938, Loss1: 1.8710
+Epoch [9/20], Iter [300/639] Training Accuracy1: 80.4688, Loss1: 1.8626
+Epoch [9/20], Iter [400/639] Training Accuracy1: 79.6875, Loss1: 1.8749
+
+ Epoch and relabelled  8 0
+Evaluating ...
+Epoch [9/20] Test Accuracy on the 4711 test images: Accuracy 53.5767
+Training ...
+
+ thredhold_clean  0.7650144812028583
+Epoch [10/20], Iter [100/639] Training Accuracy1: 78.1250, Loss1: 1.8707
+Epoch [10/20], Iter [200/639] Training Accuracy1: 83.5938, Loss1: 1.8632
+Epoch [10/20], Iter [300/639] Training Accuracy1: 79.6875, Loss1: 1.8695
+Epoch [10/20], Iter [400/639] Training Accuracy1: 74.2188, Loss1: 1.8742
+
+ Epoch and relabelled  9 0
+Evaluating ...
+Epoch [10/20] Test Accuracy on the 4711 test images: Accuracy 54.2348
+Training ...
+
+ thredhold_clean  0.7915552662599284
+Epoch [11/20], Iter [100/639] Training Accuracy1: 83.5938, Loss1: 1.8637
+Epoch [11/20], Iter [200/639] Training Accuracy1: 82.0312, Loss1: 1.8668
+Epoch [11/20], Iter [300/639] Training Accuracy1: 80.4688, Loss1: 1.8655
+Epoch [11/20], Iter [400/639] Training Accuracy1: 84.3750, Loss1: 1.8624
+
+ Epoch and relabelled  10 0
+Evaluating ...
+Epoch [11/20] Test Accuracy on the 4711 test images: Accuracy 51.9847
+Training ...
+
+ thredhold_clean  0.8157372407216112
+Epoch [12/20], Iter [100/639] Training Accuracy1: 84.3750, Loss1: 1.8564
+Epoch [12/20], Iter [200/639] Training Accuracy1: 82.8125, Loss1: 1.8643
+Epoch [12/20], Iter [300/639] Training Accuracy1: 73.4375, Loss1: 1.8726
+Epoch [12/20], Iter [400/639] Training Accuracy1: 82.0312, Loss1: 1.8655
+
+ Epoch and relabelled  11 0
+Evaluating ...
+Epoch [12/20] Test Accuracy on the 4711 test images: Accuracy 52.8975
+Training ...
+
+ thredhold_clean  0.8372917207278555
+Epoch [13/20], Iter [100/639] Training Accuracy1: 80.4688, Loss1: 1.8762
+Epoch [13/20], Iter [200/639] Training Accuracy1: 85.1562, Loss1: 1.8639
+Epoch [13/20], Iter [300/639] Training Accuracy1: 86.7188, Loss1: 1.8602
+Epoch [13/20], Iter [400/639] Training Accuracy1: 89.0625, Loss1: 1.8605
+
+ Epoch and relabelled  12 0
+Evaluating ...
+Epoch [13/20] Test Accuracy on the 4711 test images: Accuracy 52.0696
+Training ...
+
+ thredhold_clean  0.8559743770463448
+Epoch [14/20], Iter [100/639] Training Accuracy1: 85.1562, Loss1: 1.8628
+Epoch [14/20], Iter [200/639] Training Accuracy1: 85.9375, Loss1: 1.8615
+Epoch [14/20], Iter [300/639] Training Accuracy1: 81.2500, Loss1: 1.8665
+Epoch [14/20], Iter [400/639] Training Accuracy1: 89.8438, Loss1: 1.8538
+
+ Epoch and relabelled  13 0
+Evaluating ...
+Epoch [14/20] Test Accuracy on the 4711 test images: Accuracy 50.6474
+Training ...
+
+ thredhold_clean  0.8715698386485073
